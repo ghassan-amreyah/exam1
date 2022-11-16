@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/enter_the_weight_of_person"
+        style="@style/textViewStyle" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:ems="10"
+        style="@style/edtTextStyle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/textViewStyle"
+        android:text="@string/enter_the_height_of_person" />
+
+    <EditText
+        android:id="@+id/heightPerson"
+        style="@style/edtTextStyle"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="@string/male" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="calcBMI"
+        android:text="@string/calculate" />
+
+
+</LinearLayout>
