@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void calcBMI(View view) {
 
-        int weightPerson = Integer.parseInt(weight.getText().toString());
-        int heightPerson = Integer.parseInt(height.getText().toString());
+        double weightPerson = Double.parseDouble(weight.getText().toString());
+        double heightPerson = Double.parseDouble(height.getText().toString());
 
-        int result = weightPerson / (heightPerson * heightPerson);
+        double result = weightPerson / (heightPerson * heightPerson);
 
 
         if(maleSwitch.isSelected())
